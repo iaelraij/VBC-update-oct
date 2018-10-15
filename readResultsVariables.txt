@@ -1,0 +1,40 @@
+
+
+
+%%%----------- better file ---------%%%%
+
+seepC - drainage concentration, in minutes during suction events and every 10 min between events
+ScupC - cummulative outflow concentration from suction cup, input to the phreeqc model. time as seepC
+time - every 10 minutes between suction events and every minutes during suction events. Min and days(column 1 and 2 respectively)
+general_data - every minute only for suction events. Time, pH in soil, pH in cup, cum volume of sampled solution, pressure head at the VBC, pCO2 int he cup, calcite and gypsum precipitated in the cup
+ScupCf - cummulative outflow concentration for the final sampling time (according to the last time for which phreeqc was run)
+timeF - the final sampling time in min (1) and days (2)
+obsNodf - final sampling values at the observation nodes, all data
+timePhreeqc - CANCELLED same as timeF 
+Ca - calcium concentrations in cup in moles/l (1), mmolc/liter (2), avg at the observation nodes (3) and relative conc cup/obsN (4)
+K - same as Ca for K
+Cl - same as Ca for Cl
+Mg - same as Ca for Mg
+Na - same as Ca for Na
+S - same as Ca for SO4
+PHcup - final values of pH in cup
+PHsoil - final values of pH in soil
+calcite - final values of calcite in cup
+gypsum - final values of gypsum precipitated in cup
+obsNodPhreeqTime - CANCELLED same as obsNodf
+timePhreeqcLong - all times at which phreeqc was run (every 10 min at the suction event)
+CaLong - concentration in mol (1) and mmolc (2) at every time step for which phreeqc was run
+KLong - idem
+ClLong - idem
+MgLong - idem 
+NaLong - idem
+SLong - idem
+v_mean - data from v_mean for all times at vacuum events
+ObsNlong - all obsN data for every minute at vacuum events
+avgObsNlong - avg of each parameter measured in the obsN for every vacuum event minute
+obsNchem - structure with all information from the observation nodes, 11 fields and n matrices at each field, where n is the number of suction events
+ScupChem - structure with solute concentrations inside the cup, every 10 minutes at every vacuum event
+SeepQ - seepage in cm3 for all times during suction events (min) and every 10 min in between suction events
+Scupmeqcm3 - concentrations and ph in suction cups for final sampling times every sampling day. Ca(1), Mg(2), Na(3), K(4), pH(5), SO4(6), Cl(7)
+balanceConc - concentration in the different subregions for every suction timestep
+balanceConcDay - concentration in the different subregions for every suction timestep day by day (for one day graphs)
